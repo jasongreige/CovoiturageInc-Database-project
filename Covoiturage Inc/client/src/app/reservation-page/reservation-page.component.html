@@ -1,0 +1,13 @@
+<div id="search-bar">Page de reservation
+    <button routerLink="/make-reservation">Faire une reservation</button>
+</div>
+<div *ngFor="let reservation of reservations">
+    <app-reservations
+        [idReservation]="reservation.idreservation"
+        [dateDebutReservation]="reservation.datedebutreservation"
+        [dateFinReservation]="reservation.datefinreservation"
+        [exigence]="reservation.exigence"
+        [idMembre]="reservation.idmembre"
+        [plaqueImmatriculation]="reservation.plaqueimmatriculation">
+    </app-reservations>
+</div>

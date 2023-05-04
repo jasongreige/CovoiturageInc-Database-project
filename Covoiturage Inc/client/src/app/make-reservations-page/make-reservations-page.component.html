@@ -1,0 +1,31 @@
+<div id="message"></div>
+
+<form>
+    <label for="id-membre">Entrez votre ID:</label>
+    <select id="id-membre" required>
+      <option value="MA00231">MA00231</option>
+      <option value="MC00365">MC00365</option>
+      <option value="MA12054">MA12054</option>
+      <option value="MA39520">MA39520</option>
+    </select>
+    <label for="start-date">Entrez la date du debut de la reservation:</label>
+    <input id="start-date" type="text" required placeholder="(aaaa-mm-jj)"/>
+  
+    <label for="end-date">Entrez la date de fin de la reservation:</label>
+    <input id="end-date" type="text" required placeholder="(aaaa-mm-jj)"/>
+  
+    <label for="exigence">Entrez une exigence:</label>
+    <input id="exigence" type="text" placeholder="Je veux..."/>
+  
+    <label for="plaque">Entrez la plaque d'immatriculation:</label>
+    <select id="plaque" required>
+      <option value="BI2FF1">BI2FF1</option>
+      <option value="BI2FF1">BI2FF1</option>
+      <option value="CANNES">CANNES</option>
+      <option value="MILAN1">MILAN1</option>
+      <option value="3LJF5T">3LJF5T</option>
+      <option value="TURIN2">TURIN2</option>
+    </select>
+  
+    <button type="submit" (click)="addReservation()">Soumettre</button>
+  </form>

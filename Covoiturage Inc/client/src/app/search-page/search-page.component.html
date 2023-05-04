@@ -1,0 +1,24 @@
+<div id="search-bar">
+    <form id="search-form" class="flex-row">
+      <input id="search-input" type="text"/>
+      <button id="search-btn" class="fa fa-2x fa-search" type="submit" (click)="getMembers()"></button>
+    </form>
+    <div *ngFor="let member of members">
+        <app-member
+            [nom]="member.nom"
+            [idMembre]="member.idmembre"
+            [dateNaissance]="member.datenaissance"
+            [adressePostale]="member.adressepostale"
+            [adresseElectronique]="member.adresseelectronique"
+            [numeroCompteBanquaire]="member.numerocomptebanquaire"
+            [nomBanque]="member.nombanque"
+            [numeroPermis]="member.numeropermis"
+            [motDePasse]="member.motdepasse"
+            [lieuOrigine]="member.lieuorigine">
+    </app-member>
+  </div>
+</div>
+
+
+
+  
